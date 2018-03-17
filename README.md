@@ -2,26 +2,29 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
 
-## Development server
+## [Frontend] Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
+## [Frontend] Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## [Backend] Development server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+$ cd server
+$ npm start
+```
 
-## Running end-to-end tests
+# PWA: Angular SW Presentation
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+<a href="https://guillaumeunice.github.io/AngularPWATutorial/index.html" target="_blank">Here</a>
 
-## Further help
+# Tutorial
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This repo is in relation with the following video which explains Angular PWA thanks to Angular CLI:
+
+<a href="https://www.youtube.com/edit?o=U&video_id=fXudBsyg4xM
+" target="_blank"><img src="http://img.youtube.com/vi/fXudBsyg4xM/0.jpg" 
+alt="Thumbnail Angular PWA tutorial" width="240" height="180" border="10" /></a>
