@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body {
+    background: #DDD;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+button {
+    font-size: 1.8em;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+    background-color: #2196F3;
+    border: 2px solid #2196F3;
+    margin: 10px;
+    padding: 10px 15px;
+}
+
+button[disabled] {
+    background-color: gray;
+    border: 2px solid gray;
+}
+
+.content {
+    background-color: #2196F3;
+    color: #DDD;
+    padding: 10px 5px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 2px;
+    font-size: 2em;
+}
