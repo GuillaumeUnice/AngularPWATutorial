@@ -1,0 +1,57 @@
+<section>
+    <h3>Installation Part 1</h3>
+    <p>Angular CLI >= 1.6.0 (Otherwise, you can do manually, but bellow version are not stable)</p>
+    <p>Angular >= 5.0.0 or later</p>
+
+    <pre><code class="hljs" data-trim contenteditable style="font-size: 0.85em !important; line-height: 1em;">
+            ng new PROJECT-NAME --service-worker (or using the alias — -sw )
+        </code></pre>
+</section>
+<section>
+    <h3>Installation Part 2</h3>
+
+    <ul>
+        <li>Install & import
+            <strong>@angular/service-worker</strong>
+        </li>
+
+        <li>Register Service Worker through App Module
+        </li>
+    </ul>
+
+    <pre><code class="hljs" data-trim contenteditable style="font-size: 0.85em !important; line-height: 1em;">
+            # src/app/app.module.ts
+                ...
+            import { ServiceWorkerModule } from '@angular/service-worker';
+            import { environment } from '../environments/environment';
+    
+            @NgModule({
+                ...
+            imports: [
+                ...
+                ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
+            ],
+                ...
+            })
+            export class AppModule { }
+        </code></pre>
+
+    <ul>
+        <li>Generate
+            <strong>src/ngsw-config.json</strong>
+        </li>
+        <!--
+                In order to manage/pilot/lead our SW & so our PWA politics, we will dive into just after
+                but notice it's just our endpoint to config more comfortably our Service Worker
+            -->
+        <li>Update the
+            <strong>.angular-cli.json</strong> to ship SW in the build</li>
+
+    </ul>
+
+    <pre><code class="hljs" data-trim contenteditable style="font-size: 0.85em !important; line-height: 1em;">
+            # .angular-cli.json added property
+            apps.serviceWorker=true
+        </code></pre>
+
+</section>
